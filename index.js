@@ -1,9 +1,6 @@
 console.log("News Website");
-// https://gnews.io/api/v4/top-headlines?token=API-Token
-// news api - 9330cb56e24447678ba025bf949441cd
 // gnews.io - 742e6edaad81721f12652347d07a90db   ---using
 
-// let source='theverge';
 let apiToken = '742e6edaad81721f12652347d07a90db';
 
 // Grab the news container
@@ -54,21 +51,4 @@ xhr.onload = function () {
 
 xhr.send();
 
-
-
-// let search = document.getElementById("searchTxt");
-// search.addEventListener("input", function () {
-//     let inputVal = search.value.toLowerCase;
-//     let noteCards = document.getElementsByClassName("noteCard");
-
-//     Array.from(noteCards).forEach(function (element) {
-//         let cardTxt = element.getElementsByTagName("h5")[0].innerText;
-//         if (cardTxt.includes(inputVal)) {
-//             element.style.display = "block";
-//         }
-//         else {
-//             element.style.display = "none";
-//         }
-//     })
-// });
 
