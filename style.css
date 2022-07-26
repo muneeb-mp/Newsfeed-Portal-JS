@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+}
+
+
+
+/*-------------- Navbar starts here ------------------------*/
+nav {
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav span {
+    color: rgb(23, 177, 23);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    user-select: none;
+}
+
+
+
+/*----------------- News Section starts here ----------------------*/
+.main-container {
+    margin: 2rem 2rem;
+}
+
+.news-sub-title {
+    position: relative;
+}
+
+.sub-title {
+    font-size: 1.4rem;
+    line-height: 0;
+}
+
+.sub-title {
+    margin: 1rem 0;
+}
+
+.news-list-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 1rem;
+}
+
+.card {
+    background-color:cornsilk;
+    border: 1px solid black;
+    padding: 0.8rem;
+    box-shadow: 4px 4px 10px rgba(1, 1, 1, 0.7);
+    border-radius: 3px;
+}
+
+.card-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-6 {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1 img, .card-6 img {
+    width: 12rem;
+}
+
+.card-1 h5, .card-6 h5{
+    margin-top: 0.6rem;
+}
+
+.card-2, .card-3, .card-4, .card-5, .card-7, .card-8, .card-9, .card-10 {
+    display: flex;
+}
+
+.card-2 h5, .card-3 h5, .card-4 h5, .card-5 h5, .card-7 h5, .card-8 h5, .card-9 h5, .card-10 h5 {
+    margin-left: 0.8rem;
+}
+
+.card-2 img, .card-3 img, .card-4 img, .card-5 img, .card-7 img, .card-8 img, .card-9 img, .card-10 img {
+    width: 12rem;
+}
+
+.card-4, .card-5, .card-9, .card-10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+h5 {
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.description {
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    color: #444;
+}
+
+.source {
+    font-size: 0.7rem;
+    background-color: rgb(23, 177, 23);
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.6rem;
+    user-select: none;
+}
+
+.text-danger{
+    font-size: 2rem;
+    color: red;
+}
+
+
+
+
+/*-------------- footer starts here ------------------------*/
+footer{
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+footer h5{
+    font-size: 1rem;
+    color: #999;
+}
+
+footer h5 span{
+    font-size: 1rem;
+    color: lightskyblue;
+}
+
+footer a i{
+    color: lightskyblue;
+    font-size: 1.3rem;
+}
+
+footer a i:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+/*-------------- Responsiveness ------------------------*/
+@media screen and (max-width:1360px) {
+    h5 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:1160px) {
+    .main-container {
+        margin: 1rem 1rem;
+    }
+    
+    h5 {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 0.85rem;
+        margin-top: 0.4rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .news-list-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .card-1, .card-6 {
+        flex-direction: row;
+    }
+
+    .card img {
+        width: 15rem;
+    }
+    
+    .card-1 h5, .card-6 h5{
+        margin-left: 0.8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .main-container {
+        margin: 0.8rem 0.6rem;
+    }
+
+    .card {
+        display: block;
+    }
+    
+    .card img {
+        width: 18rem;
+    }
+
+
+
+    footer h5{
+        font-size: 0.7rem;
+    }
+    
+    footer h5 span{
+        font-size: 0.7rem;
+    }
+    
+    footer a i{
+        font-size: 1rem;
+    }
+}
