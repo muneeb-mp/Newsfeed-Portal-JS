@@ -2,6 +2,15 @@
 Show Newsfeed of Top Headlines using gnews.io API
 
  -----------------------------------------------------------------------------------------------------------
+ v2.1 Changelog -
+ -----------------------------------------------------------------------------------------------------------
+ Features -
+- New Navbar with hamburger menu for mobile.
+- Added Categories for different types of news.
+- Changed API from gnews.io to newsapi.org for double the number of articles displayed.
+
+
+ -----------------------------------------------------------------------------------------------------------
  v2.0 Changelog -
  -----------------------------------------------------------------------------------------------------------
  Features -

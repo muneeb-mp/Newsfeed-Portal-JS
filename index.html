@@ -19,16 +19,35 @@
 
 <body>
     <!-- navbar -->
-    <nav>
+    <nav  class="navbar">
         <div class="logo" id="logo">News<span>feed</span></div>
+
+        <!-- Creating toggle button for responsiveness -->
+        <div class="hamburger-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Categories -->
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#home" id="homepage">Home</a></li>
+                <li><a href="#entertainment" id="entertainment">Entertainment</a></li>
+                <li><a href="#technology" id="technology">Technology</a></li>
+                <li><a href="#business" id="business">Business</a></li>
+                <li><a href="#sports" id="sports">Sports</a></li>
+                <li><a href="#science" id="science">Science</a></li>
+                <li><a href="#health" id="health">Health</a></li>
+            </ul>
+        </div>
+
     </nav>
 
     <!-- News Section -->
     <div class="main-container">
-        <div class="news-sub-title">
-            <hr>
-            <h3 class="sub-title"><b>Top Headlines </b></h3>
-            <hr><br>
+        <div class="news-sub-title" id="news-sub-title">
+            <!-- Added through JavaScript -->
         </div>
 
         <div class="news-list-grid" id="news-list-grid">
@@ -40,8 +59,7 @@
     <!-- Footer -->
     <footer>
         <h5>Made as a personal project by
-            <a href="https://github.com/muneeb-mp/" target="_blank"><span>Muneeb Phansopkar&nbsp;&nbsp;&nbsp;&nbsp;<i
-                        class="fa-brands fa-github"></i></a>&nbsp;&nbsp;</span>
+            <a href="https://github.com/muneeb-mp/" target="_blank"><span>Muneeb Phansopkar&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;</span>
         </h5>
     </footer>
 
